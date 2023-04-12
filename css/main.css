@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #151320;
+}
+
+#um, #dois, #tres{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    color: #fff;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 80px;
+    margin-top: -350px;
+}
+
+#um::before, #um::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 10s  linear alternate infinite;
+}
+
+@keyframes AnimarBorda{
+    0% {
+      background-position: 0;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+
+#um::after{
+    filter: blur(50px);
+}
+
+#dois::before, #dois::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 20s  linear alternate infinite;
+}
+
+#dois::after{
+    filter: blur(50px);
+}
+
+#tres::before, #tres::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 20s  linear alternate infinite;
+}
+
+#tres::after{
+    filter: blur(50px);
+}
+
+#quatro, #cinco, #seis{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    color: #fff;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font: bold 2em "century Gothic";
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-right:80px;
+}
+
+#quatro::before, #quatro::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 20s  linear alternate infinite;
+}
+
+#quatro::after{
+    filter: blur(50px);
+}
+
+#cinco::before, #cinco::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 20s  linear alternate infinite;
+}
+
+#cinco::after{
+    filter: blur(50px);
+}
+
+#seis::before, #seis::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 20s  linear alternate infinite;
+}
+
+#seis::after{
+    filter: blur(50px);
+}
+
+.bloco1{
+    margin-left: -840px;
+}
+
+#sete{
+    position: relative;
+    width: 760px;
+    height: 150px;
+    color: #fff;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font: bold 2em "century Gothic";
+    text-transform: uppercase;
+    margin-left: -840px;
+    margin-top: 550px;
+}
+
+#sete::before, #sete::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 20s  linear alternate infinite;
+}
+
+#sete::after{
+    filter: blur(50px);
+}
+
+#titulo{
+    font: bold 2em "century Gothic";
+    text-transform: uppercase;
+    color: white;
+    margin-top: -600px;
+    margin-right: -550px;
+}
+
+
